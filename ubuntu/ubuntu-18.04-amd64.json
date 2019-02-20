@@ -325,7 +325,7 @@
     "preseed_path": "preseed.cfg",
     "template": "ubuntu-18.04-amd64",
     "version": "0.2.0",
-    "cloud_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}",
-    "cloud_repo": "{{ env `VAGRANT_CLOUD_REPO` }}"
+    "cloud_token": "{{env `VAGRANT_CLOUD_TOKEN`}}",
+    "cloud_repo": "{{env `VAGRANT_CLOUD_REPO`}}"
   }
 }
