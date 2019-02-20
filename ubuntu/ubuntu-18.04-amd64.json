@@ -218,6 +218,13 @@
         [
           "-smp",
           "{{ user `cpus` }}"
+        ],
+        [
+          "-nographic"
+        ],
+        [
+          "-machine",
+          "type=ubuntu,accel=kvm"
         ]
       ]
     },
