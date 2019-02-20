@@ -269,12 +269,6 @@
       "output": "../builds/{{user `box_basename`}}.{{.Provider}}.box",
       "type": "vagrant",
       "vagrantfile_template": "scripts/Vagrantfile_template"
-    },
-    {
-      "type": "vagrant-cloud",
-      "box_tag": "{{user `cloud_repo`}}",
-      "access_token": "{{user `cloud_token`}}",
-      "version": "{{user `version`}}"
     }
   ],
   "provisioners": [
@@ -324,8 +318,6 @@
     "no_proxy": "{{env `no_proxy`}}",
     "preseed_path": "preseed.cfg",
     "template": "ubuntu-18.04-amd64",
-    "version": "0.2.0",
-    "cloud_token": "{{env `VAGRANT_CLOUD_TOKEN`}}",
-    "cloud_repo": "{{env `VAGRANT_CLOUD_REPO`}}"
+    "version": "0.2.0"
   }
 }
